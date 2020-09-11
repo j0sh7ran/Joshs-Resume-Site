@@ -100,7 +100,10 @@
 							Upon completing this task, I was recognized for it and graduated to a Lead Developer.
 						</p>
 						<p>
-							As a Lead Developer, I was initially introduced to a client that was in need of a application for claim and billing management of a warranty provider. 
+							As a Lead Developer, I was initially introduced to a client that was in need of a application for claim and billing management of a warranty provider mentioned 
+							<a href="#projects">here</a>. The project had it's original design made, however there were holes found that didn't meet the requirements they needed to use the original
+							design as an application to meet their business needs. I began to redesign how the database structures should interact and adjusted the flow of how the system should interact by use cases. 
+							Once the new design was in place I was given a team of developers and implementation went smooth following the design. I'm now currently leading an additional project that is too new to have placement here.
 						</p>
 						<hr />
 						
@@ -176,7 +179,11 @@
 						<h3>Industry</h3>
 						<h4>Ayoka</h4>
 						<p id="medApp"><strong>Medical patient management and Insurance coding system (ASP.NET, Razor):</strong>  
-							.</p>
+						A web-application that manages patient's conditions, treatement and monitors the progress of patients to 
+						improve new cases of existing conditions stored. This application also attempts to bridge and find the best medical Insurance coding inputs 
+						to find the best care at the lowest cost for patients. Here data drives the results.
+						As a team memeber, I have assisted with maintenance, bug fixes, and several new features to this application.</p>
+
 						<p id="lawApp"><strong>Law-firm Case/Lead logistic system (ASP.NET, Razor):</strong> 
 						As a team member, I have implemented and developed a web-application that evaluates the lead-providers 
 						that law-firms pay and use to pursue cases for legal action or to drop cases that typically do not pan out. It includes 
@@ -185,20 +192,21 @@
 						This project is currently being used in a production environment and is in the maintenance stage of its life cycle.</p>
 
 						<p><strong>Web-scraper for Datapoint Analysis (Python, Selenium):</strong>  
-						This application searches for all input
+						As a solo programmer I created this application to searche for all input
 						fields that could be classified as datapoints to be analyzed for database design for
 						application rewrites. Given a list of endpoints, this will output the name of each field,
 						what type of data(text, numbers, files, etc), whether or not the datapoint is accessible
 						on the front-end, and example values typically found for these data points.</p>
 
 						<p><strong>Heavy machinery, warranty claim management and billing service (ASP.NET, Razor):</strong>  
-						.</p>
-
-						
-						
+						As a lead developer and a small team of three, have designed and implemented a application to manage a warranty consulting service's claim management and billing system
+						for dealers and manufacturers of heavy machinery. The application was build with a ASP.NET backend with a mssql database, and a Razor page frontend. 
+						This project is currently still under development, is undergoing it's second change order, and has most of its major features released in a production enviornment.</p>
 
 						<p><strong>CI/CD Gitlab runners (AWS EC2, yml):</strong>  
-						.</p>
+						This technique has been implemented in my more recent projects, 
+						where we can now monitor pipelines and jobs on gitlab to check if current builds are successful and execute unit tests on development and feature branches.
+						Additionally on staging and production/master branches, this tool will run data migrations to update the project's databases, and deploy them on their appropriate instances.</p>
 						<hr />
 
 						<h3>School</h3>
@@ -207,37 +215,78 @@
 						senior design project in conjunction with UTA’s Nursing Department, to produce a 3D
 						application to simulate Post-mortem care of a patient who has become deceased under
 						hospice care for nursing students to receive first hand educational experience. </p>
+
 						<p><strong>Recyclops - solution for plastic pollution (ASP.NET):</strong>  
 						Database showcase project, that utilizes a web-based solution to solve the pollution problem. This was done by
 						creating a logistics system for plastic recycling to be used in 3d printing, then a
 						separate system for sales of 3d printing supplies and 3d printed models in various
 						common 3d printed plastics.</p>
-						<p><strong>Simple HttpServer (Java):</strong>  
-						.</p>
+
+						<p><strong>HttpServer (Java):</strong>  
+						Starts a multi-threaded Http Server in Java that can communicate with a web browser on localhost on any specified port(defaults to 8080). 
+						This server only accepts only GET requests, and handles results: 200 OK, 404 Not Found, and 501 Not Implemented.
+						It also logs HTTP requests and errors to terminal, and
+						returns html to the browser for viewing.</p>
+
 						<p><strong>Bash shell Terminal (C):</strong>  
-							.</p>
-						<p><strong>Implementing modern language features in assembly language (ARM Assembly):</strong>  
-							.</p>
+						A basic implementation of the Bash shell that allows you to navigate directories and execute actions found in the /bin directory.
+						Actions are made by forking off the current process and having the child execute the command by "execvp()", 
+						then following the command returning to the normal bash program. 
+						The program also shows some implementation of signal intrupts and suspending processes. This assignement was given from my Operating systems class.</p>
+						
+						<p><strong>Office hours - multithreading implementation (C):</strong>  
+							A demonstration of multithreading in a office hours example. 
+							Where only a set number of students can come into the office from two separate classes. 
+							A maximum of 5 students can be in the office, and only students from a single class can be "in office". 
+							Once the office is cleared we allow the next class into the office. This program was developed as an assignement for my Operating Systems course.</p>
+
 						<p><strong>Great Circle - solution for finding the closest airports (C++):</strong>  
-						.</p>
+							Programming Assignment given from my Intro to Software Engineering course. 
+							Where when we are given a starting (latitude, longitude, altitude) and 
+							a list of over 7k airports determine and print out the five closest airports including name and distance in miles.
+							The program will continue to calculate the distance from an input position until a (-1,-1,-1) is entered. 
+							Upon reading this sentinel value, the program will exit normally.
+							The problem's write up includes the problem statement, schedule to complete this task, requirement analysis of functional and non-functional requirements, design in UML,
+							alternative aproaches for designs, constraints on the problem, source code, and analysis.
+							</p>
 
 						<p><strong>Uniform Cost search - finding most effiecient path to destination (Python):</strong>  
-							.</p>
+							As an assignement for my Artificial Intelligence course, we were to implement the uniform cost search algorithm as a path finding algorithm.
+							The program itself computes a route between the origin city and the destination city, and will print out both the length of the route and the list of all cities that lie on that route. It should also display the number of nodes expanded and nodes generated.
+						</p>
 
 						<p><strong>Graphics - low level rendering in memory (C):</strong>  
-							.</p>
+							Loads a model and view settings from files. 
+							Then calculates a projection of the given the view(camera position, canvas size, and border area).
+							We then produce the verticies that the model represents, and apply the projection on those verticies. 
+							We then draw the canvas area, and lines between verticies if the verticies are within the canvas area and visable from the camera position.
+						</p>
 
-						<p><strong>Office hours - multithreading implementation (C):</strong>  
-							.</p>
+						
 						<hr />
 
 						<h3>Personal</h3>
-						<p><strong>This site(static webpage):</strong> Created and used for the purpose of marketing myself better than a resume alone can! </p>
-						<p><strong>Personal commandline tools(Python):</strong>  </p>
-						<p><strong>EEG reader and controller(.NET):</strong> WORK IN PROGRESS </p>
-						<p><strong>Retro Gaming system(Retropie, raspberry pi):</strong>  </p>
-						<p><strong>CAD modeling & 3D printing(Cura, AutoDesk, JGAurora A5s):</strong>  </p>
-						<p><strong>Motorizing a skateboard(hardware assembly):</strong>  </p>
+						<p><strong>This site(static webpage):</strong> Created and used for the purpose of marketing myself better than a resume alone can!</p>
+						<p><strong>Personal commandline tools(Python):</strong> Just playing around with some python code to make executables to use for the commandline. 
+							A few examples being, a google search command "gs" that takes a query to do a quick google search on a browser with installed drivers. 
+							Another being, "create" which creates a base c program for me and prefills some commented out headers for class, 
+							and "coordinate" which will display your global coordinates based on your IP address.</p>
+						<p><strong>EEG reader and controller(.NET):</strong> 
+							WORK IN PROGRESS. 
+							This is a theoretical application to read values from mobile EEG (electroencephalogram) devices.
+							Then route the output to control separate devices as a controller. Briefly in short, I tried to control stuff with my mind using a brain wave reader.
+						</p>
+						<p><strong>Retro Gaming system(Retropie, raspberry pi):</strong> 
+							Created a retro arcade machine for games predating the playstation 1 
+							on a raspberrypi with the Retropie OS
+						</p>
+						<p><strong>CAD modeling & 3D printing(Cura, AutoDesk, AutoCad, Tinkercad, JGAurora A5s):</strong> 
+							I decided to pick up a 3D printer one day and learned how to work with some CAD models in programs like AutoDesk, AutoCad, and Tinkercad. Then figured out how to use a Slicer program like
+							Cura to generate the G-code(3D printer instructions) and started to print a bunch of models. 
+						</p>
+						<p><strong>Motorizing a skateboard(hardware assembly):</strong> I didn't like the walk around campus from the parking lots, and pushing a skateboard is a bit of effort. 
+							So I had the idea of tossing some motors on my skateboard, and making it go about 35 miles per hour. I haven't been late to class on campus since.
+						</p>
 					</div>
 				</div>
 			</section>
