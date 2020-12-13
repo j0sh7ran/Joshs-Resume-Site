@@ -13092,26 +13092,47 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="References:">References:<a class="anchor-link" href="#References:">&#182;</a></h2><ul>
 <li>Data Set:<ul>
-<li><a href="https://www.kaggle.com/jvanelteren/boardgamegeek-reviews">https://www.kaggle.com/jvanelteren/boardgamegeek-reviews</a></li>
+<li><a href="https://www.kaggle.com/jvanelteren/boardgamegeek-reviews">https://www.kaggle.com/jvanelteren/boardgamegeek-reviews</a><ul>
+<li>Used for analysis and what we're looking to classify</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>Existing work references:<ul>
-<li><a href="https://www.kaggle.com/jvanelteren/exploring-the-13m-reviews-bgg-dataset">https://www.kaggle.com/jvanelteren/exploring-the-13m-reviews-bgg-dataset</a>  </li>
+<li><a href="https://www.kaggle.com/jvanelteren/exploring-the-13m-reviews-bgg-dataset">https://www.kaggle.com/jvanelteren/exploring-the-13m-reviews-bgg-dataset</a>  <ul>
+<li>Goes over the contents of the data, not used here, but a good reference for understanding the contents.  </li>
+</ul>
+</li>
 </ul>
 </li>
 <li>Code References:  <ul>
 <li>pre-built sentiment analyzers:<ul>
-<li><a href="https://github.com/cjhutto/vaderSentiment">https://github.com/cjhutto/vaderSentiment</a>  </li>
-<li><a href="https://textblob.readthedocs.io/en/dev/api_reference.html#module-textblob.classifiers">https://textblob.readthedocs.io/en/dev/api_reference.html#module-textblob.classifiers</a>  </li>
+<li><a href="https://github.com/cjhutto/vaderSentiment">https://github.com/cjhutto/vaderSentiment</a>  <ul>
+<li>used to determine polarity of reviews. The results are used to classify in a Naive Bayes classifier.</li>
+</ul>
+</li>
+<li><a href="https://textblob.readthedocs.io/en/dev/api_reference.html#module-textblob.classifiers">https://textblob.readthedocs.io/en/dev/api_reference.html#module-textblob.classifiers</a>  <ul>
+<li>used to make a quick to view custom classifier for given classification labels. typically for pos and neg classes, but can be extended to be used with a variety of classes if properly trained.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>variety of NaiveBayes Classifiers:<ul>
-<li><a href="https://scikit-learn.org/stable/modules/classes.html#module-sklearn.naive_bayes">https://scikit-learn.org/stable/modules/classes.html#module-sklearn.naive_bayes</a></li>
-<li><a href="https://datascience.stackexchange.com/questions/53100/training-textblob-with-16k-rows-of-labeled-data-wont-work-only-few-are-working">https://datascience.stackexchange.com/questions/53100/training-textblob-with-16k-rows-of-labeled-data-wont-work-only-few-are-working</a></li>
+<li><a href="https://scikit-learn.org/stable/modules/classes.html#module-sklearn.naive_bayes">https://scikit-learn.org/stable/modules/classes.html#module-sklearn.naive_bayes</a><ul>
+<li>documentation over Sci-kit Naive Bayes classifiers in practice.</li>
+</ul>
+</li>
+<li><a href="https://datascience.stackexchange.com/questions/53100/training-textblob-with-16k-rows-of-labeled-data-wont-work-only-few-are-working">https://datascience.stackexchange.com/questions/53100/training-textblob-with-16k-rows-of-labeled-data-wont-work-only-few-are-working</a><ul>
+<li>shows the WHY of the in efficiency of the TextBlob Classifier, and how to transition to a Sci-kit optimized classifier for our data set.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>featrure extraction:<ul>
-<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html">https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html</a></li>
+<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html">https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html</a><ul>
+<li>the end used feature extractor that can aid in optimizing our parsing of review input.</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
