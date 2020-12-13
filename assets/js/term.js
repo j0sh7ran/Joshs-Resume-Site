@@ -5,7 +5,7 @@
         e.preventDefault();
         
         $.ajax({
-            url:'http://j0sh7ran.pythonanywhere.com/review',
+            url:'https://j0sh7ran.pythonanywhere.com/review',
             type: "POST",
             data: {
                 review: $('#review').val()
